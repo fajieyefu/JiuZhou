@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fajieyefu.jiuzhou.Query.QueryActivity" >
+    <item
+        android:id="@+id/action_new"
+        android:orderInCategory="1"
+        android:title="类别"
+        android:icon="@drawable/ic_toc_black_24dp"
+        app:showAsAction="always">
+        <menu>
+            <item android:id="@+id/submenu"
+                android:title="全部"
+                android:titleCondensed="全部"
+                />
+            <item android:id="@+id/submenu1"
+                android:title="出差申请"
+                android:titleCondensed="出差申请"
+                />
+            <item android:id="@+id/submenu2"
+                android:title="合同申请"
+                android:titleCondensed="合同申请"
+                 />
+            <item android:id="@+id/submenu3"
+                android:title="用款申请"
+                android:titleCondensed="用款申请"
+                 />
+            <item android:id="@+id/submenu4"
+                android:title="报销申请"
+                android:titleCondensed="报销申请"
+            />
+        </menu>
+    </item>
+
+
+</menu>

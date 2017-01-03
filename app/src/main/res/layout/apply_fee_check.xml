@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="用款申请审核"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:background="@drawable/corner"/>
+   <ListView
+       android:id="@+id/applyFee_listView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/title"
+       android:padding="10dp">
+   </ListView>
+
+
+</RelativeLayout>

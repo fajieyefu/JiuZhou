@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@color/wheat"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:id="@+id/classInfo_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="有无上边梁："
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/modelInfo_view"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/spinner_1"/>
+
+</LinearLayout>

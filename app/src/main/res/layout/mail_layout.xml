@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.fajieyefu.jiuzhou.Bean.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/new_mail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/corner_white_no_radius"
+        android:gravity="center_vertical"
+        android:text="新建邮件"
+        android:paddingLeft="10dp"
+        />
+    <Button
+        android:id="@+id/inbox"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/corner_white_no_radius"
+        android:gravity="center_vertical"
+        android:text="收件箱"
+        android:paddingLeft="10dp"
+        />
+    <Button
+        android:id="@+id/sending_box"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/corner_white_no_radius"
+        android:gravity="center_vertical"
+        android:text="已发送"
+        android:paddingLeft="10dp"
+        />
+
+
+</LinearLayout>

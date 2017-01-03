@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fajieyefu.jiuzhou">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <user-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <service android:name=".service.UpdateCheckNews"/>
+        <receiver android:name=".receiver.AutoUpdateReceiver"/>
+        <activity
+            android:name=".activity.ShanPingActivity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.NewsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.NewsDetail"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.YewuActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Audit.ApplyFee"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Audit.ReimbursementActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Audit.ApplyToLeaveActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.BaobiaoActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Query.QueryActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Check.Check"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Check.CheckDetail"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Query.ReimbursementQueryActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+        android:name=".Query.ReimbursementQueryDetail"
+        android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Query.ApplyFeeQueryActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Query.ApplyFeeQueryDetail"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Query.TravelQueryActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Audit.ContractInputActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Query.ContractQueryActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Query.ContractListActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Audit.QualityDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name=".Audit.QualityInputActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Audit.WorkJournalActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Query.WorkJournalQueryActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Query.WorkJournalDetail"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".Audit.ContractInputActivity2"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".Audit.ContractChooseActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".Query.ContractQuery"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".Audit.ContractList"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".Audit.PaichanInputActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".Query.PaiChanList"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".Query.PaichanQuery"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".activity.ModifyPswActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".Query.CompleteByMonth"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.Holo.Light.NoActionBar"/>
+        <activity android:name=".activity.ImageBrowseActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

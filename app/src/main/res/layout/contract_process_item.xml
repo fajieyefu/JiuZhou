@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/corner_white_no_radius"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:id="@+id/process_text"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="侧镶板制作"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/process_next"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/arrow"
+        />
+
+
+</LinearLayout>
